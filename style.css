@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra:wght@500&family=Amatic+SC:wght@700&family=Asap+Condensed:wght@200&family=Caveat&family=Cinzel+Decorative&family=Cinzel:wght@600&family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation&family=Lora&family=Nanum+Myeongjo&family=Noto+Sans&family=Nunito:wght@200&family=Open+Sans:wght@300&family=PT+Sans+Narrow&family=Poppins&family=Shadows+Into+Light&family=Source+Sans+Pro&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+   
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+ }
+.container{
+    width: 100%;
+}
+.boxes{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .box{
+    width: 30%;
+    background-color: gray;
+    position: relative;
+    border: 2px solid black;
+  
+ }
+
+ .text {
+    position: absolute;
+    top: 0;
+    right: 0;
+  width: 31%;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  
+  .box:nth-child(1) .text{
+    background-color: pink;
+  }
+  .box:nth-child(2) .text {
+    background-color: #f94141;
+    color: white;
+  }
+  
+  .box:nth-child(3) .text {
+    background-color:#e5e596db;
+  }
+ h3{
+    text-align: center;
+    margin: 0 !important;
+ }
+
+ p{
+    padding: 63px 22px;
+        text-align: justify;
+        font-weight: 600;
+        margin: 0 !important;
+ }
+
+@media(min-width:768px) and (max-width:991px){
+    #last{
+        width: 100%;
+    }
+    .box{
+        width: 48%;
+    }
+    .boxes{
+        margin: 2rem;
+        gap: 1rem;
+    }
+}
+@media(min-width:527px ) and (max-width:767px){
+    .boxes{
+        margin:0 5rem 2rem 5rem; 
+        gap: 1rem;
+
+    }
+    .box{
+        width: 100%;
+    }
+}
+
+@media(min-width:320px ) and (max-width:528px){
+    .boxes{
+        margin: 2rem; 
+      
+
+    }
+    .box{
+        width: 100%;
+    }
+}
+   
